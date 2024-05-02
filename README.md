@@ -27,44 +27,28 @@ $git flow init
    - Jenkinsfile
 
 ```
-    def gv
     pipeline {
-
     agent any
-    
+
     stages {
-        stage("init") {
+        stage('Build') {
             steps {
-                script {
-                    gv = load "script.groovy"
-                }
+                echo 'Building..'
             }
         }
-        stage("build jar") {
+        stage('Test') {
             steps {
-                script {
-                    echo "building jar"
-                    //gv.buildJar()
-                }
+                echo 'Testing..'
             }
         }
-        stage("build image") {
+        stage('Deploy') {
             steps {
-                script {
-                    echo "building image"
-                    //gv.buildImage()
-                }
+                echo 'Deploying....'
             }
-        }
-        stage("deploy") {
-            steps {
-                script {
-                    echo "deploying"
-                    //gv.deployApp()
-                }
-            }
-        }
-    }
+        }
+    }
+}
+
 ```
 
 
