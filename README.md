@@ -128,6 +128,6 @@ $ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
   
 ### *With the webhook, Jenkins will trigger a new build every time changes are pushed to the connected branch.*
 
-### 7. *Testing and Validation:*
+### 6. *Testing and Validation:*
    - Push a change to the develop branch and verify Jenkins triggers a build.
    
