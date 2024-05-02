@@ -1,11 +1,16 @@
-#Jenkins
+
+
 Automated Build and Test with Jenkins on EC2 Instance
+
 Project Setup
+
 Tools Needed
+
 EC2 instance on AWS with docker installed
 Jenkins container
 GitHub account
 Gitbash on your local host
+
 Installation and Configuration Guide
 1. Prepare GitHub Repository:
 Create or select a GitHub repository.
